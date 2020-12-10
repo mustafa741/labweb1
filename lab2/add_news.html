@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add news</title>
+</head>
+<body>
+
+<div>
+    <div>
+        <a href="index.html">list news</a>
+        <a href="remove_news.html">remove news</a>
+    </div>
+
+    <div>
+        <form id="news-form" onsubmit="event.preventDefault()">
+            <div>
+                <label for="titleInput">Title</label>
+                <input id="titleInput" type="text">
+            </div>
+            <div>
+                <label for="authorInput">Author</label>
+                <input id="authorInput" type="text">
+            </div>
+            <div>
+                <label for="contentInput">Content</label>
+                <input id="contentInput" type="text">
+            </div>
+            <input type="submit" id="submit-add">
+        </form>
+    </div>
+</div>
+
+<script src="main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        Context.bindNewsFormOperation().execute()
+    }, false);
+</script>
+</body>
+</html>

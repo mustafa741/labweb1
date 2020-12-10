@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove news</title>
+</head>
+<body>
+
+<div>
+
+    <div>
+        <a href="index.html">list news</a>
+        <a href="add_news.html">add news</a>
+    </div>
+
+    <div>
+        <table id="news-remove-table">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th> </th>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<script src="main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        Context.showNewsRemoveOperation().execute()
+    }, false);
+</script>
+</body>
+</html>
